@@ -21,6 +21,8 @@
   --color-border-secondary: #b8b8b8;
   --color-border-tertiary: #f8f8fa;
   --radius-unit: 4px;
+  --background-nav: #d5d5d53d;
+  --navbar-height: 72px;
 }
 
 .dark {
@@ -30,6 +32,7 @@
   --color-primary: #fafafa;
   --color-secondary: #f3f3f6;
   --color-tertiary: #b8b8b8;
+  --background-nav: #3535353d;
 }
 
 @theme inline {
@@ -38,6 +41,8 @@
 
   --font-sans: "Poppins", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
+
+  --color-nav: var(--background-nav);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -76,6 +81,8 @@
   --breakpoint-sm: 430px;
   --breakpoint-md: 834px;
   --breakpoint-lg: 1440px;
+
+  --height-navbar: var(--navbar-height);
 }
 
 @layer base {
