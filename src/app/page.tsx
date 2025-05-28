@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default function Home() {
-  return <div className="bg-brand ">Hello World</div>;
+  redirect("/dashboard");
 }
