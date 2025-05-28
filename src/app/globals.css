@@ -1,26 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafafa;
+  --foreground: #1f1f1f;
+  --color-brand: #6f42c1;
+  --color-brand-dark: #341e5c;
+  --color-positive-dark: #417f25;
+  --color-positive-light: #daf1d0;
+  --color-negative: #d00000;
+  --color-primary: #1f1f1f;
+  --color-secondary: #262626;
+  --color-tertiary: #666666;
+  --color-border-primary: #e0e0e0;
+  --color-border-secondary: #b8b8b8;
+  --color-border-tertiary: #f8f8fa;
+  --radius-unit: 4px;
+}
+
+.dark {
+  --background: #1f1f1f;
+  --foreground: #fafafa;
+  --color-brand-dark: #dcd1f0;
+  --color-primary: #fafafa;
+  --color-secondary: #f3f3f6;
+  --color-tertiary: #b8b8b8;
 }
 
 @theme inline {
+  --color-*: initial;
+  --spacing: 4px;
+
+  --font-sans: "Poppins", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ring: var(--ring);
+  --color-border: var(--border);
+  --color-brand: var(--color-brand);
+  --color-brand-dark: var(--color-brand-dark);
+  --color-positive-dark: var(--color-positive-dark);
+  --color-positive-light: var(--color-positive-light);
+  --color-negative: var(--color-negative);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-tertiary: var(--color-tertiary);
+  --color-border-primary: var(--color-border-primary);
+  --color-border-secondary: var(--color-border-secondary);
+  --color-border-tertiary: var(--color-border-tertiary);
+
+  --radius-*: initial;
+  --radius-0: 0;
+  --radius-1: var(--radius-unit);
+  --radius-2: calc(var(--radius-unit) * 2);
+  --radius-3: calc(var(--radius-unit) * 3);
+  --radius-4: calc(var(--radius-unit) * 4);
+  --radius-5: calc(var(--radius-unit) * 5);
+  --radius-6: calc(var(--radius-unit) * 6);
+  --radius-7: calc(var(--radius-unit) * 7);
+  --radius-8: calc(var(--radius-unit) * 8);
+  --radius-9: calc(var(--radius-unit) * 9);
+  --radius-10: calc(var(--radius-unit) * 10);
+  --radius-11: calc(var(--radius-unit) * 11);
+  --radius-12: calc(var(--radius-unit) * 12);
+  --radius-13: calc(var(--radius-unit) * 13);
+  --radius-14: calc(var(--radius-unit) * 14);
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 430px;
+  --breakpoint-md: 834px;
+  --breakpoint-lg: 1440px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-background text-foreground;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
