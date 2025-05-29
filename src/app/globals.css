@@ -10,6 +10,7 @@
   --background: #fafafa;
   --foreground: #1f1f1f;
   --color-brand: #6f42c1;
+  --color-brand-foreground: #ffffff;
   --color-brand-dark: #341e5c;
   --color-positive-dark: #417f25;
   --color-positive-light: #daf1d0;
@@ -50,6 +51,7 @@
   --color-border: var(--border);
   --color-brand: var(--color-brand);
   --color-brand-dark: var(--color-brand-dark);
+  --color-brand-foreground: var(--color-brand-foreground);
   --color-positive-dark: var(--color-positive-dark);
   --color-positive-light: var(--color-positive-light);
   --color-negative: var(--color-negative);
