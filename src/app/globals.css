@@ -12,6 +12,7 @@
   --foreground: #1f1f1f;
   --color-brand: #6f42c1;
   --color-brand-foreground: #ffffff;
+  --color-light: #f8f8fa;
   --color-brand-dark: #341e5c;
   --color-positive-dark: #417f25;
   --color-positive-light: #daf1d0;
@@ -46,6 +47,7 @@
   --font-bodoni: 'Bodoni Moda', serif;
 
   --color-nav: var(--background-nav);
+  --color-light: var(--color-light);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
