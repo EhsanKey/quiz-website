@@ -80,7 +80,6 @@ export async function createQuestionWithAnswers(values: NewQuestionPayload) {
       },
     ];
     await createAnswersBatch(answerItems);
-    console.log('Question and answers created successfully');
     return createdQuestion;
   } catch (error) {
     console.error('Error creating question and answers:', error);
@@ -123,7 +122,6 @@ export async function updateQuestionWithAnswers(params: {
       isCorrect: item.answerId === correctAnswer.answerId,
     }));
     await upsertAnswers(answersToUpsert, id);
-    console.log('Question and answers updated successfully');
   } catch (error) {
     console.error(`Error updating question and answers for id=${id}:`, error);
     throw error;

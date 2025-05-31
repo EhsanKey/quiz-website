@@ -67,7 +67,6 @@ const EditQuizForm = ({ questionsPromise }: EditQuizFormProps) => {
 
   useEffect(() => {
     const incorrectAnswers = getValues('incorrectAnswers');
-    console.log('incorrectAnswers: ', incorrectAnswers);
 
     if (incorrectAnswers.length === 3) {
       setDisabledActions({ disableAdd: true, disableRemove: false });

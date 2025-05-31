@@ -31,7 +31,6 @@ const request = async (
     fetchOptions.next = options.next;
   }
 
-  console.log(`${BASE_URL}${url}`, `${BASE_URL}${url}`);
   const response = await fetch(`${BASE_URL}${url}`, fetchOptions);
 
   if (!response.ok) {
