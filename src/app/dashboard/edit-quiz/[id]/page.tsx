@@ -1,4 +1,9 @@
 import EditQuizModule from '@/modules/edit-quiz';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Edit Quiz',
+};
 
 type PageProps = {
   params: Promise<{ id: number }>;

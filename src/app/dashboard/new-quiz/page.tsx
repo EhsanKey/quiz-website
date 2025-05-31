@@ -1,4 +1,9 @@
 import NewQuizModule from '@/modules/new-quiz';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'New Quiz',
+};
 
 const Page = () => {
   return (
