@@ -26,7 +26,7 @@ const EditQuizHeader = () => {
       <div className="flex flex-col gap-2">
         <div className="flex gap-4 justify-end">
           <span className="font-medium text-base font-montserrat text-primary">Status</span>
-          <Switch className="bg-negative data-[state=checked]:bg-positive-dark" />
+          <Switch className="bg-negative data-[state=checked]:bg-positive-dark" checked />
         </div>
         <span className="font-normal text-[8px] font-montserrat text-tertiary">
           Your post will be saved as a public
