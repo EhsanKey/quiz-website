@@ -26,6 +26,7 @@
   --radius-unit: 4px;
   --background-nav: #d5d5d53d;
   --navbar-height: 72px;
+  --color-popover: #f3f3f6;
 }
 
 .dark {
@@ -36,6 +37,7 @@
   --color-secondary: #f3f3f6;
   --color-tertiary: #b8b8b8;
   --background-nav: #3535353d;
+  --color-popover: #262626;
 }
 
 @theme inline {
@@ -65,6 +67,8 @@
   --color-border-primary: var(--color-border-primary);
   --color-border-secondary: var(--color-border-secondary);
   --color-border-tertiary: var(--color-border-tertiary);
+
+  --color-popover: var(--color-popover);
 
   --radius-*: initial;
   --radius-0: 0;
