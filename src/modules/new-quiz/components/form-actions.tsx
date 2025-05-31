@@ -19,7 +19,7 @@ const FormActions = ({ loading }: FormActionsProps) => {
         Cancel
       </Link>
       <Button size="lg" type="submit" disabled={loading}>
-        Update Quiz
+        Create Quiz
       </Button>
     </div>
   );
