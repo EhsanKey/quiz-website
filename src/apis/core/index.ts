@@ -32,7 +32,7 @@ const request = async (
   }
 
   console.log(`${BASE_URL}${url}`, `${BASE_URL}${url}`);
-  const response = await fetch(`${BASE_URL}/${url}`, fetchOptions);
+  const response = await fetch(`${BASE_URL}${url}`, fetchOptions);
 
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
