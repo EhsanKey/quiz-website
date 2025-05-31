@@ -1,4 +1,4 @@
-const QUESTION_URL = 'questions';
+const QUESTION_URL = '/questions';
 
 export const GET_QUESTIONS_EP = `${QUESTION_URL}`;
 export const CREATE_QUESTION_EP = `${QUESTION_URL}`;
